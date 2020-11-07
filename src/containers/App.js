@@ -2,7 +2,9 @@ import React from 'react';
 
 function App() {
     return (
-        <h1>Налоговый вычет</h1>
+        <div className='container'>
+            <button className='button button-ghost'>Налоговый вычет</button>
+        </div>
     );
 }
 
