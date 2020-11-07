@@ -1,0 +1,13 @@
+.tag-group {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        line-height: 24px;
+        font: {
+            family: $font-medium;
+            size: 14px;
+        }
+        margin-right: 24px;
+    }
+}

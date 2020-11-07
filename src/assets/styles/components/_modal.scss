@@ -73,4 +73,12 @@
         right: -8px;
         top: -8px;
     }
+
+    &__tag-group {
+        margin-top: 24px;
+
+        .button_tag {
+            margin: 0 8px;
+        }
+    }
 }
