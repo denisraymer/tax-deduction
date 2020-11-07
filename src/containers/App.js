@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div className='container'>
-            <button className='button button-ghost' onClick={toggleModal}>Налоговый вычет</button>
+            <button className='button button_ghost' onClick={toggleModal}>Налоговый вычет</button>
             <Modal isShowing={isShowingModal} hide={toggleModal}/>
         </div>
     );

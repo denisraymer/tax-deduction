@@ -2,20 +2,42 @@
     border-radius: 6px;
     border: 1px solid #FF5E56;
     background-color: #FF5E56;
-    transition: background-color .5s, color .5s;
+    transition: background-color .5s, color .5s, box-shadow .5s;
     box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
     outline: none;
     cursor: pointer;
     font: {
+        weight: 500;
         family: $font-medium;
         size: 16px;
     }
     line-height: 24px;
     color: #fff;
     display: block;
-    padding: 16px 32px;
+    padding: 15px 32px;
 
-    &-ghost {
+    &:hover {
+        background-color: #EA0029;
+        box-shadow: 0 0 24px rgba(234, 0, 41, 0.5);
+        transition: background-color .5s, box-shadow .5s;
+    }
+
+    &_link {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        color: #EA0029;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+            color: #F53A31;
+            transition: color .5s;
+        }
+    }
+
+    &_ghost {
         border: 1px solid #fff;
         background-color: transparent;
         box-shadow: none;
@@ -25,5 +47,41 @@
             color: #000000;
             transition: background-color .5s, color .5s;
         }
+    }
+
+    &_tag {
+        border-color: #EEF0F2;
+        border-radius: 50px;
+        background-color: #EEF0F2;
+        box-shadow: none;
+        font: {
+            family: $font-regular;
+            size: 14px;
+        }
+        color: #333;
+        padding: 6px 12px;
+
+        &:hover {
+            border-color: #DFE3E6;
+            background-color: #DFE3E6;
+            box-shadow: none;
+            transition: background-color .5s, border-color .5s;
+        }
+
+        &-active {
+            border-color: #FF5E56;
+            background-color: #FF5E56;
+            color: #fff;
+
+            &:hover {
+                border-color: #EA0029;
+                background-color: #EA0029;
+                transition: background-color .5s, border-color .5s;
+            }
+        }
+    }
+
+    @include max-screen(425px) {
+        font-size: 14px;
     }
 }
