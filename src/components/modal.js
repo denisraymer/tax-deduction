@@ -4,7 +4,6 @@ import IconClose from '../assets/images/icon-close.svg';
 
 const Modal = ({isShowing, hide}) => isShowing ? ReactDOM.createPortal(
     <React.Fragment>
-        <div className='modal-overlay'/>
         <div className='modal-wrapper' aria-modal aria-hidden tabIndex={-1} role='dialog'>
             <div className='modal'>
                 <div className='modal__header'>
@@ -29,7 +28,7 @@ const Modal = ({isShowing, hide}) => isShowing ? ReactDOM.createPortal(
                         <label className='form-check__label'>
                             78 000 рублей <span className='form-check__year'>в 1-ый год</span>
                             <input className='form-check__input' type='checkbox'/>
-                            <span className="form-check__mark"/>
+                            <span className='form-check__mark'/>
                         </label>
                     </div>
                     <div className='tag-group modal__tag-group'>

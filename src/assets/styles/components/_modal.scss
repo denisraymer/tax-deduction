@@ -1,22 +1,11 @@
-.modal-overlay {
-    background-color: #b3b3b3;
-    width: 100vw;
-    min-height: 100vh;
-    z-index: 1;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-}
-
 .modal-wrapper {
-    width: 100vw;
+    background-color: #b3b3b3;
     min-height: 100vh;
-    outline: 0;
     display: flex;
     justify-content: center;
-    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
@@ -103,6 +92,7 @@
 
     @include max-screen(425px) {
         border-radius: 0;
+        min-height: calc(100vh - 64px);
         max-width: 100%;
         margin-top: 0;
 
