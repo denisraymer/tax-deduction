@@ -1,31 +1,29 @@
 .button {
-    border-radius: 15px;
-    border: 1px solid transparent;
-    background-color: #eef5ff;
-    font: {
-        //family: $font-default;
-        size: 15px;
-    }
+    border-radius: 6px;
+    border: 1px solid #FF5E56;
+    background-color: #FF5E56;
+    transition: background-color .5s, color .5s;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
     outline: none;
     cursor: pointer;
-    color: #6e9fe9;
+    font: {
+        family: $font-medium;
+        size: 16px;
+    }
+    line-height: 24px;
+    color: #fff;
     display: block;
-    padding: 5px 18px;
+    padding: 16px 32px;
 
-    &-link {
+    &-ghost {
+        border: 1px solid #fff;
         background-color: transparent;
-        padding: 5px 0 5px 0;
-    }
+        box-shadow: none;
 
-    &-select {
-        background-color: transparent;
-        color: #000;
-        padding: 5px 22px 5px 22px;
+        &:hover {
+            background-color: #fff;
+            color: #000000;
+            transition: background-color .5s, color .5s;
+        }
     }
-
-    //&-arrow-down {
-    //    //noinspection CssUnknownTarget
-    //    background: transparent url('../img/sprites/sprite.svg#arrow') no-repeat right center;
-    //    background-size: 20px;
-    //}
 }
