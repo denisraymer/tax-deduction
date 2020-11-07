@@ -55,6 +55,12 @@
             family: $font-medium;
             size: 28px;
         }
+
+        &_small {
+            line-height: 24px;
+            font-size: 14px;
+            margin-top: 16px;
+        }
     }
 
     &__paragraph {
@@ -72,6 +78,12 @@
         position: absolute;
         right: -8px;
         top: -8px;
+    }
+
+    &__form-check {
+        border-bottom: 1px solid #DFE3E6;
+        padding-bottom: 16px;
+        margin-top: 16px;
     }
 
     &__tag-group {

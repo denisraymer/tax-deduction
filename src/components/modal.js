@@ -24,6 +24,14 @@ const Modal = ({isShowing, hide}) => isShowing ? ReactDOM.createPortal(
                         <input type='text' className='form-group__input' placeholder='Введите данные' id='inputSalary'/>
                     </div>
                     <button className='button button_link'>Рассчитать</button>
+                    <div className='modal__title modal__title_small'>Итого можете внести в качестве досрочных:</div>
+                    <div className='form-check modal__form-check'>
+                        <label className='form-check__label'>
+                            78 000 рублей <span className='form-check__year'>в 1-ый год</span>
+                            <input className='form-check__input' type='checkbox'/>
+                            <span className="form-check__mark"/>
+                        </label>
+                    </div>
                     <div className='tag-group modal__tag-group'>
                         <div className='tag-group__title'>Что уменьшаем?</div>
                         <button type='button' className='button button_tag button_tag-active'>Платёж</button>
@@ -35,7 +43,8 @@ const Modal = ({isShowing, hide}) => isShowing ? ReactDOM.createPortal(
                 </div>
             </div>
         </div>
-    </React.Fragment>, document.body
+    </React.Fragment>
+    , document.body
 ) : null;
 
 export default Modal;
