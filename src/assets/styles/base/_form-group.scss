@@ -1,0 +1,40 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__label {
+        line-height: 24px;
+        font: {
+            weight: 500;
+            family: $font-medium;
+            size: 14px;
+        }
+    }
+
+    &__input {
+        border-radius: 3px;
+        border: 1px solid #DFE3E6;
+        max-height: calc(40px - 16px);
+        line-height: 22px;
+        font: {
+            weight: 500;
+            family: $font-regular;
+            size: 14px;
+        }
+        outline: none;
+        transition: border-color .5s;
+        padding: 8px 10px;
+        margin: 8px 0;
+
+        &:hover {
+            border-color: #000;
+            transition: border-color .5s;
+        }
+
+        &:focus {
+            border-color: #E5E5E5;
+            transition: border-color .5s;
+        }
+    }
+}

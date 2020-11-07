@@ -2,18 +2,40 @@
     border-radius: 6px;
     border: 1px solid #FF5E56;
     background-color: #FF5E56;
-    transition: background-color .5s, color .5s;
+    transition: background-color .5s, color .5s, box-shadow .5s;
     box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
     outline: none;
     cursor: pointer;
     font: {
+        weight: 500;
         family: $font-medium;
         size: 16px;
     }
     line-height: 24px;
     color: #fff;
     display: block;
-    padding: 16px 32px;
+    padding: 15px 32px;
+
+    &:hover {
+        background-color: #EA0029;
+        box-shadow: 0 0 24px rgba(234, 0, 41, 0.5);
+        transition: background-color .5s, box-shadow .5s;
+    }
+
+    &-link {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        color: #EA0029;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+            color: #F53A31;
+            transition: color .5s;
+        }
+    }
 
     &-ghost {
         border: 1px solid #fff;
