@@ -1,9 +1,14 @@
 import React from 'react';
+import Modal from '../components/modal';
+import useModal from '../hooks/useModal';
 
 function App() {
+    const {isShowingModal, toggleModal} = useModal();
+
     return (
         <div className='container'>
-            <button className='button button-ghost'>Налоговый вычет</button>
+            <button className='button button-ghost' onClick={toggleModal}>Налоговый вычет</button>
+            <Modal isShowing={isShowingModal} hide={toggleModal}/>
         </div>
     );
 }

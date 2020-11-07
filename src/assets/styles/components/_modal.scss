@@ -1,0 +1,48 @@
+.modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    border-radius: 3px;
+    width: 500px;
+    padding: 2rem;
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__close-button {
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        opacity: .3;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #b3b3b3;
+}
+
+.modal-wrapper {
+    min-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}
