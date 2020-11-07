@@ -80,4 +80,8 @@
             }
         }
     }
+
+    @include max-screen(425px) {
+        font-size: 14px;
+    }
 }

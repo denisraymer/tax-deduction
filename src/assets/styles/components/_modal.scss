@@ -13,8 +13,6 @@
 .modal-wrapper {
     width: 100vw;
     min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
     outline: 0;
     display: flex;
     justify-content: center;
@@ -91,6 +89,40 @@
 
         .button_tag {
             margin: 0 8px;
+        }
+    }
+
+    @include max-screen(768px) {
+        max-width: calc(453px - 64px);
+
+        &__close-button {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    @include max-screen(425px) {
+        border-radius: 0;
+        max-width: 100%;
+        margin-top: 0;
+
+        &__close-button {
+            width: 12px;
+            height: 12px;
+        }
+
+        &__title {
+            line-height: 24px;
+            font-size: 18px;
+
+            &_small {
+                font-size: 15px;
+            }
+        }
+
+        &__paragraph {
+            line-height: 16px;
+            font-size: 12px;
         }
     }
 }

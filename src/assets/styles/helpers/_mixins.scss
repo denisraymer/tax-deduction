@@ -1,3 +1,5 @@
+@import '~sass-mediaqueries/media-queries';
+
 // Connection fonts
 @mixin fontFace($family, $src, $style: normal, $weight: normal) {
     @font-face {
