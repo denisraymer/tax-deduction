@@ -1,15 +1,16 @@
 import React from 'react';
-import Modal from '../components/Modal';
-import useModal from '../hooks/useModal';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Page404} from '../page/Page404';
+import Main from '../page/Main';
 
 function App() {
-    const {isShowingModal, isClosingModal} = useModal();
-
     return (
-        <div className='container'>
-            <button className='button button_ghost' onClick={isClosingModal}>Налоговый вычет</button>
-            <Modal isShowingModal={isShowingModal} isClosingModal={isClosingModal}/>
-        </div>
+        <Router>
+            <Switch>
+                <Route exact path='/' component={Main}/>
+                <Route component={Page404}/>
+            </Switch>
+        </Router>
     )
 }
 
