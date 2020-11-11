@@ -1,16 +1,16 @@
 import React from 'react';
-import Modal from '../components/modal';
+import Modal from '../components/Modal';
 import useModal from '../hooks/useModal';
 
 function App() {
-    const {isShowingModal, toggleModal} = useModal();
+    const {isShowingModal, isClosingModal} = useModal();
 
     return (
         <div className='container'>
-            <button className='button button_ghost' onClick={toggleModal}>Налоговый вычет</button>
-            <Modal isShowing={isShowingModal} hide={toggleModal}/>
+            <button className='button button_ghost' onClick={isClosingModal}>Налоговый вычет</button>
+            <Modal isShowingModal={isShowingModal} isClosingModal={isClosingModal}/>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App

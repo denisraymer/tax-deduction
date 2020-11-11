@@ -9,8 +9,8 @@ const useModal = () => {
 
     return {
         isShowingModal: isShowing,
-        toggleModal: toggle,
+        isClosingModal: toggle,
     }
-};
+}
 
-export default useModal;
+export default useModal
