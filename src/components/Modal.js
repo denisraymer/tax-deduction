@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import IconClose from '../assets/images/icon-close.svg';
-import DeductionForm from './DeductionForm';
+import Form from './Form';
 
 const Modal = ({isShowingModal, isClosingModal}) => isShowingModal ? ReactDOM.createPortal(
     <React.Fragment>
@@ -19,7 +19,7 @@ const Modal = ({isShowingModal, isClosingModal}) => isShowingModal ? ReactDOM.cr
                     <div className='modal__paragraph'>Используйте налоговый вычет чтобы погасить ипотеку досрочно.
                         Размер налогового вычета составляет не более 13% от своего официального годового дохода.
                     </div>
-                    <DeductionForm />
+                    <Form />
                     <div className='modal__title modal__title_small'>Итого можете внести в качестве досрочных:</div>
                     <div className='form-check modal__form-check'>
                         <label className='form-check__label'>
