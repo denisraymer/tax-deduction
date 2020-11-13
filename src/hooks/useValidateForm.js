@@ -12,14 +12,21 @@ const useValidateForm = () => {
             return
         }
 
-        setDisabled(formValidation());
+        disableElement(formValidation())
     }, [inputValue])
 
-    const onChangeInput = (event) => {
-        event = event.target.value.replace(/[^\d]/g, '').replace(/\s/g, '').replace(/(\d)(?=(\d{3})+$)/g, '$1 ')
+    const disableElement = (status) => {
+        setDisabled(prevDisabled => {
+            prevDisabled = status
+            return prevDisabled
+        });
+    }
+
+    const onChangeInput = (value) => {
+        value = value.target.value.replace(/[^\d]/g, '').replace(/\s/g, '').replace(/(\d)(?=(\d{3})+$)/g, '$1 ')
 
         setInputValue(prevInputValue => {
-            prevInputValue = event
+            prevInputValue = value
             return prevInputValue
         })
     }
@@ -38,6 +45,7 @@ const useValidateForm = () => {
     }
 
     return {
+        disableElement,
         onChangeInput,
         inputStatus,
         inputValue,
