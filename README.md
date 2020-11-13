@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/denisraimer/richbee-relation">
+  <a href="https://github.com/denisraimer/tax-deduction">
     <h1 align="center">KDX</h1>
   </a>
 
@@ -9,12 +9,10 @@
     The calculation of the tax deduction for KODIX
     <br />
     <br />
-    <a href="https://denisraimer.github.io/richbee-relation/">View Demo</a>
+    <a href="https://denisraymer.github.io/tax-deduction/">View Demo</a>
     ·
-    <a href="https://github.com/denisraimer/richbee-relation/issues">Report Bug</a>
+    <a href="https://github.com/denisraymer/tax-deduction/issues">Report Bug</a>
     ·
-    <a href="https://github.com/denisraimer/richbee-relation/issues">Request Feature</a>
+    <a href="https://github.com/denisraymer/tax-deduction/issues">Request Feature</a>
   </p>
 </p>
-
-<h3 align="center">...</h1>
