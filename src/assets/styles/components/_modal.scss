@@ -4,14 +4,17 @@
     display: flex;
     outline: none;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     top: 0;
     z-index: 2;
+
+    @include max-screen(768px) {
+        overflow-y: scroll;
+    }
 }
 
 .modal {
