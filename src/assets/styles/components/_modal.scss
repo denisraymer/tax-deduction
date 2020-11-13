@@ -1,0 +1,119 @@
+.modal-wrapper {
+    background-color: #b3b3b3;
+    min-height: 100vh;
+    display: flex;
+    outline: none;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.modal {
+    border-radius: 30px;
+    background-color: #fff;
+    max-width: calc(552px - 64px);
+    align-self: flex-start;
+    position: relative;
+    margin-top: 120px;
+    padding: 32px;
+
+    &__header {
+        position: relative;
+        padding-bottom: 16px;
+    }
+
+    &__footer {
+        margin-top: 50px;
+    }
+
+    &__footer-button {
+        width: 100%;
+    }
+
+    &__title {
+        line-height: 40px;
+        font: {
+            weight: 500;
+            family: $font-medium;
+            size: 28px;
+        }
+
+        &_small {
+            line-height: 24px;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+    }
+
+    &__paragraph {
+        line-height: 24px;
+        font: {
+            weight: 400;
+            family: $font-regular;
+            size: 14px;
+        }
+        color: #808080;
+        margin-bottom: 24px;
+    }
+
+    &__close-button {
+        position: absolute;
+        right: -8px;
+        top: -8px;
+    }
+
+    &__form-check {
+        border-bottom: 1px solid #DFE3E6;
+        padding-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    &__tag-group {
+        margin-top: 24px;
+
+        .button_tag {
+            margin: 0 8px;
+        }
+    }
+
+    @include max-screen(768px) {
+        max-width: calc(453px - 64px);
+
+        &__close-button {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    @include max-screen(425px) {
+        border-radius: 0;
+        min-height: calc(100vh - 64px);
+        max-width: 100%;
+        margin-top: 0;
+
+        &__close-button {
+            width: 12px;
+            height: 12px;
+        }
+
+        &__title {
+            line-height: 24px;
+            font-size: 18px;
+
+            &_small {
+                font-size: 15px;
+            }
+        }
+
+        &__paragraph {
+            line-height: 16px;
+            font-size: 12px;
+        }
+    }
+}

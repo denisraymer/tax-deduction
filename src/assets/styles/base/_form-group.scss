@@ -1,0 +1,67 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+
+    &_error {
+        .form-group__input {
+            border-color: #EA0029;
+
+            &:hover {
+                border-color: #EA0029;
+                transition: border-color .5s;
+            }
+
+            &:focus {
+                border-color: #EA0029;
+                transition: border-color .5s;
+            }
+        }
+
+        .form-group__message {
+            color: #EA0029;
+        }
+    }
+
+    &__label {
+        line-height: 24px;
+        font: {
+            weight: 500;
+            family: $font-medium;
+            size: 14px;
+        }
+    }
+
+    &__message {
+        line-height: 12px;
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    &__input {
+        border-radius: 3px;
+        border: 1px solid #DFE3E6;
+        max-height: calc(40px - 16px);
+        line-height: 22px;
+        font: {
+            weight: 500;
+            family: $font-regular;
+            size: 14px;
+        }
+        outline: none;
+        transition: border-color .5s;
+        padding: 8px 10px;
+        margin-top: 8px;
+
+        &:hover {
+            border-color: #000;
+            transition: border-color .5s;
+        }
+
+        &:focus {
+            border-color: #E5E5E5;
+            transition: border-color .5s;
+        }
+    }
+}
