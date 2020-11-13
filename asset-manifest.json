@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tax-deduction/static/css/main.c159852e.chunk.css",
+    "main.js": "/tax-deduction/static/js/main.4c3e299b.chunk.js",
+    "main.js.map": "/tax-deduction/static/js/main.4c3e299b.chunk.js.map",
+    "runtime-main.js": "/tax-deduction/static/js/runtime-main.9e468c95.js",
+    "runtime-main.js.map": "/tax-deduction/static/js/runtime-main.9e468c95.js.map",
+    "static/js/2.74321b4d.chunk.js": "/tax-deduction/static/js/2.74321b4d.chunk.js",
+    "static/js/2.74321b4d.chunk.js.map": "/tax-deduction/static/js/2.74321b4d.chunk.js.map",
+    "index.html": "/tax-deduction/index.html",
+    "static/css/main.c159852e.chunk.css.map": "/tax-deduction/static/css/main.c159852e.chunk.css.map",
+    "static/js/2.74321b4d.chunk.js.LICENSE.txt": "/tax-deduction/static/js/2.74321b4d.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/tax-deduction/static/media/LabGrotesque-Regular.446ca450.woff",
+    "static/media/icon-close.beb7d290.svg": "/tax-deduction/static/media/icon-close.beb7d290.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e468c95.js",
+    "static/js/2.74321b4d.chunk.js",
+    "static/css/main.c159852e.chunk.css",
+    "static/js/main.4c3e299b.chunk.js"
+  ]
+}
